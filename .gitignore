@@ -109,7 +109,6 @@ test/default/core4
 test/default/core5
 test/default/core6
 test/default/core_ed25519
-test/default/core_ristretto255
 test/default/ed25519_convert
 test/default/generichash
 test/default/generichash2
@@ -136,7 +135,6 @@ test/default/scalarmult6
 test/default/scalarmult7
 test/default/scalarmult8
 test/default/scalarmult_ed25519
-test/default/scalarmult_ristretto255
 test/default/secretbox
 test/default/secretbox2
 test/default/secretbox7

@@ -26,7 +26,6 @@ EXTRA_DIST = \
 	chacha20.exp \
 	codecs.exp \
 	core_ed25519.exp \
-	core_ristretto255.exp \
 	core1.exp \
 	core2.exp \
 	core3.exp \
@@ -55,7 +54,6 @@ EXTRA_DIST = \
 	randombytes.exp \
 	scalarmult.exp \
 	scalarmult_ed25519.exp \
-	scalarmult_ristretto255.exp \
 	scalarmult2.exp \
 	scalarmult5.exp \
 	scalarmult6.exp \
@@ -106,7 +104,6 @@ DISTCLEANFILES = \
 	chacha20.res \
 	codecs.res \
 	core_ed25519.res \
-	core_ristretto255.res \
 	core1.res \
 	core2.res \
 	core3.res \
@@ -135,7 +132,6 @@ DISTCLEANFILES = \
 	randombytes.res \
 	scalarmult.res \
 	scalarmult_ed25519.res \
-	scalarmult_ristretto255.res \
 	scalarmult2.res \
 	scalarmult5.res \
 	scalarmult6.res \
@@ -321,9 +317,6 @@ codecs_LDADD              = $(TESTS_LDADD)
 core_ed25519_SOURCE       = cmptest.h core_ed25519.c
 core_ed25519_LDADD        = $(TESTS_LDADD)
 
-core_ristretto255_SOURCE  = cmptest.h core_ristretto255.c
-core_ristretto255_LDADD   = $(TESTS_LDADD)
-
 core1_SOURCE              = cmptest.h core1.c
 core1_LDADD               = $(TESTS_LDADD)
 
@@ -404,9 +397,6 @@ scalarmult_LDADD          = $(TESTS_LDADD)
 
 scalarmult_ed25519_SOURCE = cmptest.h scalarmult_ed25519.c
 scalarmult_ed25519_LDADD  = $(TESTS_LDADD)
-
-scalarmult_ristretto255_SOURCE = cmptest.h scalarmult_ristretto255.c
-scalarmult_ristretto255_LDADD  = $(TESTS_LDADD)
 
 scalarmult2_SOURCE        = cmptest.h scalarmult2.c
 scalarmult2_LDADD         = $(TESTS_LDADD)
@@ -489,11 +479,9 @@ xchacha20_LDADD           = $(TESTS_LDADD)
 if !MINIMAL
 TESTS_TARGETS += \
 	core_ed25519 \
-	core_ristretto255 \
 	pwhash_scrypt \
 	pwhash_scrypt_ll \
 	scalarmult_ed25519 \
-	scalarmult_ristretto255 \
 	siphashx24 \
 	xchacha20
 endif

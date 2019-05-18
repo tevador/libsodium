@@ -162,9 +162,6 @@
     <ClCompile Include="src\libsodium\crypto_scalarmult\crypto_scalarmult.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\libsodium\crypto_scalarmult\ristretto255\ref10\scalarmult_ristretto255_ref10.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\libsodium\crypto_scalarmult\ed25519\ref10\scalarmult_ed25519_ref10.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -327,9 +324,6 @@
     <ClCompile Include="src\libsodium\crypto_core\ed25519\core_ed25519.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\libsodium\crypto_core\ed25519\core_ristretto255.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\libsodium\crypto_core\ed25519\ref10\ed25519_ref10.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -410,9 +404,6 @@
     <ClInclude Include="src\libsodium\include\sodium\crypto_onetimeauth_poly1305.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\libsodium\include\sodium\crypto_scalarmult_ristretto255.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\libsodium\include\sodium\crypto_kx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -432,9 +423,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\libsodium\include\sodium\crypto_verify_32.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\libsodium\include\sodium\crypto_core_ristretto255.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\libsodium\include\sodium\crypto_stream_xchacha20.h">
