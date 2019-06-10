@@ -163,8 +163,9 @@ argon2_fill_segment_avx512f(const argon2_instance_t *instance,
         return;
     }
 
-    if (instance->type == Argon2_id &&
-        (position.pass != 0 || position.slice >= ARGON2_SYNC_POINTS / 2)) {
+    if (instance->type == Argon2_d ||
+        (instance->type == Argon2_id &&
+        (position.pass != 0 || position.slice >= ARGON2_SYNC_POINTS / 2))) {
         data_independent_addressing = 0;
     }
 
