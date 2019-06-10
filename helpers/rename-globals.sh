@@ -116,7 +116,7 @@ fi
 
 echo
 
-if diff -u "$QUIRKS_H" "$QUIRKS_H_NEW" | grep "^+" >/dev/null; then
+if diff -u "$QUIRKS_H" "$QUIRKS_H_NEW" | grep -q "^+" >/dev/null; then
     echo "The quirks header file needs an update." >&2
     exit 1
 fi
